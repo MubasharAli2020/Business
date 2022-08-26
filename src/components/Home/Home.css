@@ -1,0 +1,184 @@
+/* home main */
+.home {
+    margin: 0;
+    padding: 0;
+    /* max-width: 1080px;
+    margin: auto!important; */
+    
+  }
+  .home_main {
+    background: #36d1dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #5b86e5,
+      #36d1dc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #5b86e5,
+      #36d1dc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    height: 90vh;
+    
+    color: #fff;
+    position: relative;
+    letter-spacing: 4px;
+    line-height: 40px;
+  }
+  
+  .home .grid {
+    grid-template-columns: 55% 45%;
+    gap: 40px;
+  }
+  .home_main_text {
+    justify-content: flex-start;
+  } 
+  .home_main_text h1 {
+    margin-left: -5px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .home_main_text p {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .home_main .btn:hover {
+    outline: none;
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in;
+  }
+  .home_main .btn:active {
+    border: none;
+    outline: none;
+  }
+  .home_main .btn:visited {
+    border: none;
+    outline: none;
+  }
+  
+  /* home_intro */
+  .home_intro {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .home_intro .grid {
+    grid-template-columns: 60% 40%;
+  }
+  
+  .home_intro h2 {
+    font-weight: bold;
+    letter-spacing: 0.6px;
+  }
+  .home_intro p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 35px;
+    font-size: 17px;
+  }
+  /* work-env */
+  .work-env .gird {
+    grid-template-columns: 1fr;
+  }
+  .work-env img {
+    margin: 40px 250px;
+  }
+  
+  /* home_technologies */
+  .home_tech {
+    padding: 50px 20px;
+  }
+  .home_tech .front {
+    margin: 30px auto;
+  }
+  .home_tech li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 13px;
+  }
+  .home_tech .flex {
+    flex-wrap: wrap;
+  }
+  
+  .home_tech .card {
+    padding: 30px;
+    transition: transform 0.2s ease-in;
+  }
+  .home_tech .card h2 {
+    text-align: center;
+    font-weight: 600;
+  }
+  .home_tech .card img {
+    text-align: center;
+  }
+  .home_tech h1 {
+    font-weight: 700;
+    font-size: 45px;
+  }
+  .home_tech .card .html-icon {
+    color: #f06529;
+  }
+  .home_tech .card .css-icon {
+    color: #2965f1;
+  }
+  .home_tech .card .js-icon {
+    color: #f0db4f;
+  }
+  .home_tech .card .react-icon {
+    color: #61dbfb;
+  }
+  .home_tech .card .php-icon {
+    color: #474a8a;
+  }
+  .home_tech .card .laravel-icon {
+    color: #f05340;
+  }
+  .home_tech .card .nodejs-icon {
+    color: #3c873a;
+  }
+  .home_tech .card:hover {
+    transform: translateY(-15px);
+  }
+  .home_main .contact-btn {
+    font-weight: 600;
+  }
+  .home_intro_text {
+    padding: 20px;
+  }
+  .home_intro_text p {
+    margin-bottom: 30px;
+  }
+  .work-env img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: auto;
+  }
+  @media (max-width: 768px) {
+    .home_main .grid {
+      display: flex;
+      flex-direction: column;
+  
+      /* max-width: 700px; */
+    }
+    .home_main {
+      text-align: center;
+    }
+    .home_intro .grid {
+      display: flex;
+      flex-direction: column;
+    }
+    .home_intro img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  
+    .work-env .container img {
+      width: 100% !important;
+      height: 100% !important;
+      margin-left: auto !important;
+    }
+  }
+  .home .container{
+    max-width: 1080px;
+  margin: 0 auto;
+  }

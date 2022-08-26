@@ -1,0 +1,635 @@
+    ----------------------------------------------------------------------------------
+
+
+                               Contact Page  
+
+  
+  <div class="container d-flex justify-content-center align-items-center">
+         
+
+          <form name="contact-form" method="POST" data-netlify="true" action='/thankyou'>
+            <input type="hidden" name="form-name" value="contact-form" />
+            <h1 class="title text-center mb-4">Talk to Me</h1>
+
+            <div class="form-group position-relative">
+              <label for="formName" class="d-block">
+                <i class="icon" data-feather="user"></i>
+              </label>
+              <input
+                type="text"
+                id="formName"
+                name="name"
+                class="form-control form-control-lg thick"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="form-group position-relative">
+              <label for="formEmail" class="d-block">
+                <i class="icon" data-feather="mail"></i>
+              </label>
+              <input
+                type="email"
+                id="formEmail"
+                class="form-control form-control-lg thick"
+                placeholder="E-mail"
+                name="email"
+              />
+            </div>
+
+            <div class="form-group message">
+              <textarea
+                id="formMessage"
+                class=""
+                rows="7"
+                placeholder="Message"
+                name="message"
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary" >
+                Send message
+              </button>
+            </div>
+          </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        CSS
+
+        .Contact svg {
+    height: 23rem;
+    margin-right: 4rem;
+  }
+  
+  .Contact #envelope {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  .Contact #star1,
+  #star2,
+  .Contact #star3,
+  .Contact #star4,
+  #star5,
+  #star6 {
+    animation: blink 1s ease-in-out infinite;
+  }
+  
+  .Contact #star2 {
+    animation-delay: 100ms;
+  }
+  
+  .Contact #star3 {
+    animation-delay: 500ms;
+  }
+  
+  .Contact #star4 {
+    animation-delay: 700ms;
+  }
+  
+  .Contact #star5 {
+    animation-delay: 300ms;
+  }
+  
+  .Contact #star6 {
+    animation-delay: 200ms;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .Contact .container {
+    height: 100vh;
+  }
+  
+  .Contact form .title {
+    font-family: "Pacifico", cursive;
+    color: #212529;
+    font-size: 2.5rem;
+  }
+  .Contact form .form-control {
+    background-color: #f2f6f8;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+  }
+  .Contact form .form-control.thick {
+    height: 3.3rem;
+    padding: 0.5rem 3.5rem;
+  }
+  .Contact form .form-control:focus {
+    background-color: #f2f6f8;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+  }
+  .Contact form .message .form-control {
+    padding: 0.5rem 1.8rem;
+  }
+  .Contact form ::placeholder {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    left: 0;
+  }
+  .Contact form input,
+  .Contact form textarea {
+    font-family: "Quicksand", sans-serif;
+    color: #212529;
+    font-size: 1.1rem;
+  }
+  .Contact form .icon {
+    color: #57565c;
+    height: 1.3rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.1rem;
+  }
+  
+  .Contact .btn.btn-primary {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 3rem;
+    border: 0;
+    border-radius: 3rem;
+  
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .Contact .btn.btn-primary:hover:enabled {
+    box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+    background-size: 100% 100%;
+    transform: translateY(-0.15em);
+  }
+  .Contact .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .form-group {
+    margin: 20px auto;
+  }
+  .form-group .message textarea {
+    padding: 200px;
+  }
+  
+  .Contact .container {
+    margin-top: 100px;
+  }
+  .Contact .container form input,
+  textarea:focus-within {
+    outline: none;
+  }
+  .Contact .container form textarea,
+  input {
+    width: 100%;
+    height: 100%;
+  }
+  .Contact .container form .btn-primary {
+    color: #fff;
+    background-color: #36d1dc !important;
+    height: 100%;
+    width: 100%;
+  }
+  .Contact .container img {
+    height: 100%;
+    width: 100%;
+    display: none!important;
+  }
+  @media (max-width: 768px) {
+    .Contact {
+      margin-bottom: 100px;
+    }
+    .Contact .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .Contact svg {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .Contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+    }
+  
+    .Contact .container form textarea {
+      margin-left: center !important;
+      width: 85vw !important;
+      height: 100%;
+    }
+  }
+  
+  .Contact form input,
+  textarea {
+    border: #212529 solid 1px !important;
+    border-radius: 16px !important;
+    padding: 30px !important;
+  }
+  
+
+    ----------------------------------------------------------
+
+
+
+
+
+                                               Services Page
+
+ <h1>WEBSITE DEVELOPMENT</h1>
+        <div className="web-service">
+          <div className="web-service-data">
+            <ul>
+              <li>
+                <h4>Business Website</h4>
+              </li>
+              <li>
+                <h4>Personal / Portfolio Website</h4>
+              </li>
+              <li>
+                <h4>Non - Profit Website</h4>
+              </li>
+            </ul>
+          </div>
+         
+          <div className="web-service-img">
+            <img src={Web} alt="sorry"/>
+          </div>
+        </div>
+        <h1>CONTENT WRITING</h1>
+        <div className="web-service">
+          <div className="web-service-data">
+            <ul>
+              <li>
+                <h4>Business Writing</h4>
+              </li>
+              <li>
+                <h4>Personal Blog Writing</h4>
+              </li>
+              <li>
+                <h4>Non Profit Website - Blog Writing - Free</h4>
+              </li>
+            </ul>
+          </div>
+          <div className="web-service-img">
+            <img src={Writing} alt="sorry"/>
+          </div>
+        </div>
+        <h1>CHATBOT INTEGERATION</h1>
+        <div className="web-service">
+          <div className="web-service-data">
+            <ul>
+              <li>
+                <h4>Customer Care ChatBot</h4>
+              </li>
+              <li>
+                <h4>Messenger ChatBot</h4>
+              </li>
+              <li>
+                <h4>Live ChatBot Support</h4>
+              </li>
+            </ul>
+          </div>
+          <div className="web-service-img">
+            <img
+              src={"https://media.giphy.com/media/gT9QzllTygbedDOeRm/giphy.gif"}
+              alt="sorry"
+            />
+          </div>
+        </div>
+        <h1>FIXING WEBSITES BUGS</h1>
+        <div className="web-service">
+          <div className="web-service-data">
+            <ul>
+              <li>
+                <h4>Fixing Design Errors</h4>
+              </li>
+              <li>
+                <h4>Fixing Coding Errors</h4>
+              </li>
+              <li>
+                <h4>Fixing Structure Errors</h4>
+              </li>
+            </ul>
+          </div>
+          <div className="web-service-img">
+            <img
+              src={"https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif"}
+              alt="sorry"
+            />
+          </div>
+        </div>
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.Services {
+  font-family: "Roboto", sans-serif;
+  max-width: 1080px;
+  margin: auto;
+  margin-bottom: 120px;
+}
+.web-service {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.web-service-data {
+  max-width: 45%;
+}
+
+.web-service-img img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+.web-service-img {
+  height: 50vh;
+  width: 55vw;
+}
+@media (max-width: 768px) {
+  .web-service {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center !important;
+  }
+  img {
+    height: 100vh !important;
+    width: 80vw !important;
+    object-fit: contain;
+    margin: 0px -40px !important;
+  }
+}
+.Services h1 {
+  text-align: center;
+  background-color: #444;
+  padding: 30px;
+  color: #fff;
+  font-weight: 900;
+}
+.Services h4 {
+  letter-spacing: 3px;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+    ----------------------------------------------------------
+
+Navbar
+
+
+ <div className="navbar">
+      <div className="container flex" >
+        <Link className="logo" to="/">
+         Mubashar
+        </Link>
+        <ul className="navbar-right">
+          <li className="nav-item">
+            <Link to="/services" className="nav-link link">
+              Services
+            </Link>
+          </li>
+          {/* <li className="nav-item">
+            <Link to="projects.html" className="nav-link link">
+              Projects
+            </Link>
+          </li> */}
+          <li className="nav-item">
+            <Link to="/contact" className="nav-link link">
+              Contact 
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    Navbar CSS
+
+    .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* max-width: 1080px;
+    margin: auto; */
+    background: #36d1dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #5b86e5,
+      #36d1dc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #5b86e5,
+      #36d1dc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .link {
+    align-items: center !important;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar ul li .link {
+    color: #fff;
+    font-weight: 600;
+  }
+  .navbar a:hover {
+    padding: 6px;
+    transform: scale(0.98);
+    transition: 0.4s ease-in;
+  }
+  .navbar h1 {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    /* .navbar-right {
+    } */
+  
+    .navbar-right {
+      display: flex;
+      flex-direction: row;
+      margin: 47px 40px;
+    }
+    .navbar-right li:nth-child(0) {
+      margin: 0px 0px;
+    }
+    .navbar-right li:nth-child(0) {
+      margin: 0px 200px;
+    }
+  }
+  .logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .logo:hover {
+    border: none !important;
+    transition: 0.4s ease-in;
+    transform: 0 !important;
+    padding: 0 !important;
+  }
+  .navbar-right ul li Link {
+    font-weight: 900 !important;
+  }
+    
+
+
+    ----------------------------------------------------------
+
+
+
+    Footer File
+
+     <div className="main-footer">
+      <div className="footer">
+        <div className="container grid">
+          <h1>Mubashar</h1>
+          <ul>
+            {/* <li>
+              <a href="#">Projects</a>
+            </li> */}
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              <Link to="contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="copyright">
+        <div className="container grid">
+          <h3>Copyright & 2021</h3>
+        </div>
+      </div>
+    </div>
+
+CSS Footer
+.footer {
+    background: #36d1dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #5b86e5,
+      #36d1dc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #5b86e5,
+      #36d1dc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 13px;
+    color: #ffff;
+  }
+  .footer ul li a {
+    color: #fff;
+    font-size: 20px;
+  }
+  .footer h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .copyright .grid {
+    grid-template-columns: 1fr;
+  
+    padding: 10px;
+    background: white;
+    color: black;
+    min-width: 100vw;
+    text-align: center !important;
+  }
+  
+  .copyright h1 {
+    font-size: 20px;
+    font-weight: 700;
+    /* text-align: center !important;
+    margin: auto !important; */
+  }
+  .footer ul li a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .footer ul li a:hover {
+    border-bottom: 1px solid #fff;
+    padding: 6px;
+    transform: scale(0.98);
+    transition: 0.4s ease-in;
+  }
+  @media (max-width: 768px) {
+    .footer .grid {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer ul {
+      display: flex;
+      flex-direction: row;
+      margin: 1px 40px !important;
+      background-color: #5b86e5;
+      padding: 20px;
+    }
+    .footer ul li {
+      width: fit-content;
+      block-size: fit-content;
+      margin: 0px 20px;
+      font-weight: 600;
+      font-size: 17px;
+    }
+    .footer ul li a {
+      font-size: 18px;
+    }
+    .footer ul li a:hover {
+      border-bottom: 1px solid #fff;
+      padding: 6px;
+      transform: scale(0.98);
+      transition: 0.4s ease-in;
+    }
+  }
+  
