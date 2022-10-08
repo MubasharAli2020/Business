@@ -7,6 +7,7 @@ import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
 import ThankYou from "./components/Contact/ThankYou";
 import Footer from './components/Footer/Footer';
+import Work from './components/Work/Work';
 export default function App() {
   return (
     <Router>
@@ -19,6 +20,8 @@ export default function App() {
 
           <Route path="/contact" component={Contact} />
           <Route path="/thankyou" component={ThankYou} />
+          <Route path="/work" component={Work} />
+
         </Switch>
         <Footer />
 

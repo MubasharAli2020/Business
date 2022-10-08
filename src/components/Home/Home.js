@@ -5,6 +5,7 @@ import img15 from "../images/img15.png";
 import blogging from "../images/blogging.png";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import Photoshop from '../images/photoshop.png';
 import "./Home.css";
 function Home() {
   return (
@@ -31,12 +32,13 @@ function Home() {
               <p>
                 
                
-               <bold>We have a Team of Website Developers, Graphic Designer and Customer Support Representative</bold>
+               <bold>We’re a team of strategists, designers, and Website Developer that unlock creative potential. 
+</bold>
                 <br />
-                You can Contact US.
+                You can check our complete services here.
               </p>
-              <Link to="/contact" className="services-btn btn btn-dark">
-                Contact US
+              <Link to="/work" className="services-btn btn btn-dark">
+                Services
               </Link>
             </div>
             <img src={img13} alt="sorry" />
@@ -52,14 +54,14 @@ function Home() {
           >
             Technologies we Work On
           </h2>
-          <h4
+          {/* <h4
             className="center front"
             style={{ fontSize: "30px", fontWeight: "600" }}
           >
             Frontend Technologies
-          </h4>
+          </h4> */}
           <div className="container flex">
-            <div className="card">
+            {/* <div className="card">
               <h4 style={{ textAlign: "center" }}>HTML</h4>
               <i
                 class="fab fa-html5 fa-6x html-icon"
@@ -73,6 +75,30 @@ function Home() {
             <div className="card">
               <h4 style={{ textAlign: "center" }}>JavaScript</h4>
               <i class="fab fa-js fa-6x js-icon"></i>
+            </div> */}
+            {/* <div className="card">
+              <h4 style={{ textAlign: "center" }}>React</h4>
+              <i class="fab fa-react fa-6x react-icon"></i>
+            </div> */}
+          </div>
+          <h3
+            className="center front"
+            style={{ fontSize: "30px", fontWeight: "600" }}
+          >
+            Website Developement Technologies
+          </h3>
+          <div className="container flex">
+            <div className="card">
+              <h4 style={{ textAlign: "center" }}>Wordpress</h4>
+              <i class="fa-brands fa-wordpress-simple fa-6x"></i>
+            </div>
+            <div className="card">
+              <h4 style={{ textAlign: "center", padding: "5px" }}>Laravel</h4>
+              <i class="fab fa-laravel fa-6x laravel-icon"></i>
+            </div>
+            <div className="card">
+              <h4 style={{ textAlign: "center" }}>NodeJS</h4>
+              <i class="fab fa-node fa-6x nodejs-icon"></i>
             </div>
             <div className="card">
               <h4 style={{ textAlign: "center" }}>React</h4>
@@ -83,27 +109,36 @@ function Home() {
             className="center front"
             style={{ fontSize: "30px", fontWeight: "600" }}
           >
-            Backend Technologies
+            Graphic Design
           </h3>
           <div className="container flex">
             <div className="card">
-              <h4 style={{ textAlign: "center" }}>php</h4>
-              <i class="fab fa-php fa-6x php-icon"></i>
+              <h4 style={{ textAlign: "center" }}>Figma</h4>
+              <i class="fa-brands fa-figma fa-6x"></i>
             </div>
             <div className="card">
-              <h4 style={{ textAlign: "center", padding: "5px" }}>Laravel</h4>
-              <i class="fab fa-laravel fa-6x laravel-icon"></i>
+              <h4 style={{ textAlign: "center", padding: "5px" }}>Photoshop</h4>
+              <img src={Photoshop} width={120} height={120} />
             </div>
-            <div className="card">
+            {/* <div className="card">
               <h4 style={{ textAlign: "center" }}>NodeJS</h4>
               <i class="fab fa-node fa-6x nodejs-icon"></i>
             </div>
+            <div className="card">
+              <h4 style={{ textAlign: "center" }}>React</h4>
+              <i class="fab fa-react fa-6x react-icon"></i>
+            </div> */}
           </div>
         </div>
+      
+
+
+
         {/* work environment */}
         <div className="work-env">
           <div className="container">
             <img src={blogging} alt="sorry" />
+            {/* https://megatasktechnologies.com/assets/images/maintenance4.gif */}
           </div>
         </div>
       </div>

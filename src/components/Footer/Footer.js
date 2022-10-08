@@ -24,7 +24,7 @@ function Footer() {
               <Link to="/" className="list">Home</Link>
             </li>
             <li>
-              <Link to="/services" className="list">Projects</Link>
+              <Link to="/work" className="list">Services</Link>
             </li>
             <li>
               <Link to="contact" className="list">Contact</Link>
@@ -32,15 +32,15 @@ function Footer() {
                         </p>
                     </div>
                     <div class="col-md-6 item text">
-                        <h3>MSA</h3>
-                        <p>I Provide Website Development, ChatBot Integeration, Graphic Designing Services to my clienst Locally and Gloabbly..</p>
+                        <h3>NETDESIGNTODAY</h3>
+                        <p>We Provide Website Development, ChatBot Integeration, Graphic Designing Services to our clienst Locally and Gloabbly.</p>
                     </div>
                     <div class="col item social"><a href="https://www.linkedin.com/in/mubashar-ali-150963213/" target='_blank'><i class="fa-brands  fa-linkedin"></i></a><a href="https://github.com/MubasharAli2020" target='_blank'><i class="fa-brands fa-github"></i></a></div>
                 </div>
                
             </div>
         </footer>
-        <p class="copyright" style={{color:'white'}}>Company Name © 2022</p>
+        <p class="copyright" style={{color:'white'}}>NETDESIGNTODAY©2022</p>
     </div>
 
 </div>

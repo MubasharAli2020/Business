@@ -121,4 +121,7 @@ p {
   .home .grid {
     grid-template-columns: 100%;
   } */
+  .navbar-brand{
+padding:10px 10px;
+  }
 }

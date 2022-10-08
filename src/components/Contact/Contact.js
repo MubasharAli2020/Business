@@ -19,6 +19,7 @@ class Contact extends Component {
 		<div class="form" >
       <div className="col-md-6">
         <img src="https://img.freepik.com/free-vector/get-touch-concept-illustration_114360-6504.jpg?t=st=1652596362~exp=1652596962~hmac=0c6201e00b4a55fe2c646478714129589af971ef329b43db810d7ece52d2d4db&w=740" />
+		{/* https://i.pinimg.com/originals/ec/c3/88/ecc3882e29654a291f8824494979145b.gif */}
       </div>
 			<div class="col-md-6 right-col">
 				<h2>Have Something to Discuss</h2>

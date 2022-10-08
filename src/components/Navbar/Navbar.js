@@ -1,11 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import logo from '../images/logo.png';
 function Navbar() {
   return (
     <div className='navbar'>
     <nav class="navbar navbar-expand-lg navbar-light container bg-transparent">
-   <Link class="navbar-brand " to="/">MSA</Link>
+   <Link class="navbar-brand " to="/"><img src={logo} width={50} height={50} style={{borderRadius:'50px'}}/></Link>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
@@ -14,8 +15,11 @@ function Navbar() {
        <li class="nav-item active">
    <Link  to="/" class="nav-link px-4">Home <span class="sr-only">(current)</span></Link>
        </li>
-       <li class="nav-item">
+       {/* <li class="nav-item">
        <Link  to="/services" class="nav-link px-4">Projects</Link>
+       </li> */}
+       <li class="nav-item">
+       <Link  to="/work" class="nav-link px-4">Services</Link>
        </li>
        <li class="nav-item">
          <Link to="/contact" class="nav-link px-4">Contact</Link>
