@@ -39,16 +39,7 @@ function Work() {
       <p class="services_btn">ChatBot Intergeration</p>
         <p class="services_btn">Handling Customer Queries 24 / 7</p>
     </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="services_title">24 / 7 Customer Care Support </h2>
-      <p class="copy">We will handle your Customer Queries via call, Email, Chat or through Social Media Platforms .</p>
-      {/* <button class="btn">View Trips</button> */}
-      <p class="services_btn">Customer Service with Customer Satisfaction</p>
-        <p class="services_btn">Handling Customer Queries 24 / 7</p>
-    </div>
-  </div>
+<h1>Work</h1>
   {/* <div class="card">
     <div class="content">
       <h2 class="title">To The Beach</h2>
