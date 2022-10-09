@@ -21,7 +21,7 @@ function Home() {
                 Contact US
               </Link>
             </div>
-            <img src={img12} alt="sorry" />
+            <img src="https://blog2opstree.files.wordpress.com/2021/02/hdadrmia.gif" alt="sorry" />
           </div>
         </div>
         {/* intro to Dodo */}

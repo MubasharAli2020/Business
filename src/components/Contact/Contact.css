@@ -107,7 +107,7 @@ ul li{
 .left-col h2{
     color:#fff;
     font-size:32px;
-    line-height: 37px;
+    /* line-height: 37px; */
 }
 
 .left-col img.img1{
@@ -152,11 +152,11 @@ ul li{
     width: 60%;
     padding: 40px 30px 0 30px;    
     background: rgba(255, 255, 255, 0.7);
-  
+    
 }
 
 .right-col h2{
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     font-size: 30px;
     color: #585858;
     font-weight: 600;    

@@ -26,6 +26,7 @@
     .Work .destinations .page-content {
       grid-template-columns: repeat(1, 1fr);
     }
+ 
   }
   
   .Work .destinations .card {
@@ -44,6 +45,11 @@
   @media (min-width: 600px) {
     .Work .destinations .card {
       height: 350px;
+    }
+  }
+  @media (max-width: 720px) {
+    .Work .destinations .card {
+      height: 450px;
     }
   }
   .Work .destinations .card:before {
@@ -239,11 +245,15 @@
   }
     
 
-  @media (hover: hover) and (max-width: 600px) {
-   .Work .destinations .content .services_title{
+
+
+
+  @media (hover: hover) and (max-width: 720px) {
+
+    .Work .destinations .content .services_title{
     align-items: center;
-    margin: auto 0;
-    padding: 0.75rem 1.5rem;
+   
+    
    }
     .Work .destinations .card:after {
       transform: translateY(0);
@@ -289,3 +299,13 @@
     }
   }
     
+
+  @media(max-width:720px){
+    .Work .destinations .page-content{
+    
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    }
+  }
