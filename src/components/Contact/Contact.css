@@ -161,6 +161,12 @@ ul li{
     color: #585858;
     font-weight: 600;    
 }
+.right-col h5{
+    margin-bottom: 30px;
+    
+    color: #585858;
+    font-weight: 600;    
+}
 
 .right-col button{
     background: linear-gradient(299.5deg, #6DBAC8 35.53%, #8FC7E9 109.8%);

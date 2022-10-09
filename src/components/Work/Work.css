@@ -91,9 +91,10 @@
     /* https://cdn.dribbble.com/users/2058540/screenshots/8225403/media/bc617eec455a72c77feab587e09daa96.gif */
     /* https://assets.materialup.com/uploads/01227a43-fd62-4ad7-be8f-b567bbf9cd56/preview.gif */
   }
-  /* .Work .destinations .card:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1610724278550-437bbeb3e61f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=428&q=80);
+   .Work .destinations .card:nth-child(4):before {
+    background-image: url(https://storage.googleapis.com/nextivawebsites-wordpressfiles-voip/var/www/virtual/nextiva.com/voip/customer-service-examples-feature-image2.png);
   }
+  /*
   .Work .destinations .card:nth-child(5):before {
       background-image: url(https://images.unsplash.com/photo-1561983779-7d7e065befa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80);
     }
