@@ -44,12 +44,12 @@
   }
   @media (min-width: 600px) {
     .Work .destinations .card {
-      height: 350px;
+      min-height: 350px;
     }
   }
   @media (max-width: 720px) {
     .Work .destinations .card {
-      height: 450px;
+      min-height: 450px;
     }
   }
   .Work .destinations .card:before {
@@ -251,11 +251,6 @@
 
   @media (hover: hover) and (max-width: 720px) {
 
-    .Work .destinations .content .services_title{
-    align-items: center;
-   
-    
-   }
     .Work .destinations .card:after {
       transform: translateY(0);
     }
@@ -309,4 +304,5 @@
    align-items: center;
    justify-content: center;
     }
+    
   }
