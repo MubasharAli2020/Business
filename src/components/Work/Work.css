@@ -246,11 +246,27 @@
   }
     
 
+  
+
+  @media(max-width:720px){
+    /* *  {
+      overflow-x: hidden;
+    } */
+    .Work .destinations .page-content .card{
+      min-width: 100%;
+    }
+    .Work .destinations .page-content{
+    
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    }
+    
+  }
 
 
-
-  @media (hover: hover) and (max-width: 720px) {
-
+  @media ( hover : hover) and (max-width: 720px) {
     .Work .destinations .card:after {
       transform: translateY(0);
     }
@@ -293,16 +309,4 @@
     .Work .destinations .card:focus-within .content > *:not(.services_title) {
       transition-duration: 0s;
     }
-  }
-    
-
-  @media(max-width:720px){
-    .Work .destinations .page-content{
-    
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    }
-    
   }
