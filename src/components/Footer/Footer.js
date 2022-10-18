@@ -11,7 +11,7 @@ function Footer() {
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
                         <p>
-                            <li>Graphic Designing</li>
+                            <li>Social Media Management</li>
                             <li>Web Development</li>
                             <li>ChatBot Integeration</li>
                         </p>
@@ -35,7 +35,7 @@ function Footer() {
                         <h3>NETDESIGNTODAY</h3>
                         <p>We Provide Website Development, ChatBot Integeration, Graphic Designing Services to our clienst Locally and Gloabbly.</p>
                     </div>
-                    <div class="col item social"><a href="https://www.linkedin.com/in/mubashar-ali-150963213/" target='_blank'><i class="fa-brands  fa-linkedin"></i></a><a href="https://github.com/MubasharAli2020" target='_blank'><i class="fa-brands fa-github"></i></a></div>
+                    {/* <div class="col item social"><a href="https://www.linkedin.com/in/mubashar-ali-150963213/" target='_blank'><i class="fa-brands  fa-linkedin"></i></a><a href="https://github.com/MubasharAli2020" target='_blank'><i class="fa-brands fa-github"></i></a></div> */}
                 </div>
                
             </div>
