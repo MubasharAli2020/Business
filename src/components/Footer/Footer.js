@@ -35,7 +35,13 @@ function Footer() {
                         <h3>NETDESIGNTODAY</h3>
                         <p>We Provide Website Development, ChatBot Integeration, Graphic Designing Services to our clienst Locally and Gloabbly.</p>
                     </div>
-                    {/* <div class="col item social"><a href="https://www.linkedin.com/in/mubashar-ali-150963213/" target='_blank'><i class="fa-brands  fa-linkedin"></i></a><a href="https://github.com/MubasharAli2020" target='_blank'><i class="fa-brands fa-github"></i></a></div> */}
+                    <div class="col item social">
+                      <a href="https://www.facebook.com/profile.php?id=100087206791688" target='_blank'><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/netdesigntoday/" target='_blank'><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://twitter.com/NetDesignToday?t=9ie3dowJ7eiNcVPg72csrw&s=09" target='_blank'><i class="fa-brands fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/in/net-designtoday-261271254" target='_blank'><i class="fa-brands fa-linkedin"></i></a>
+
+                      </div>
                 </div>
                
             </div>
